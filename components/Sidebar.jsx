@@ -10,7 +10,7 @@ const Sidebar = ({ docs }) => {
   const [rootNodes, setRootNodes] = useState([]);
   const [nonRootNodesGrouped, setNonRootNodesGrouped] = useState({});
   
-
+// eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     let matchDocs = docs;
     if(pathName.includes("/tags")){
